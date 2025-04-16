@@ -18,6 +18,12 @@ This container image is pre-built and shared via DockerHub at iankoulski/do-jupy
 docker run -it --rm -v $(pwd):/wd -p 80:8888 -e JUPYTER_TOKEN=Jupyt3r -e GRANT_SUDO=yes iankoulski/do-jupyterlab
 ```
 
+To run JupyterLab on Kubernetes using the pre-built container image, please use the following command:
+
+```sh
+kubectl apply -f https://bit.ly/do-jupyterlab-yaml
+```
+
 # Share
 
 If you want to share the container with others or run it on a Kubernetes cluster, run the `./push.sh` script. This will push the container image to your configured registry.

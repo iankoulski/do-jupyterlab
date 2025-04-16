@@ -28,9 +28,9 @@ spec:
           containerPort: ${PORT_INTERNAL}
         env:
         - name: JUPYTER_TOKEN
-          value: ${JUPYTER_TOKEN}
+          value: "${JUPYTER_TOKEN}"
         - name: GRANT_SUDO
-          value: ${JUPYTER_GRANT_SUDO} 
+          value: "${JUPYTER_GRANT_SUDO}" 
         #resources:
         #  limits:
         #    cpu: 4
