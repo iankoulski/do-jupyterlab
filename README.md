@@ -15,7 +15,7 @@ Run the `./build.sh` script to build the container image.
 This container image is pre-built and shared via DockerHub at iankoulski/do-jupyterlab. To simply run JupyterLab without building the container image, please use the following command:
 
 ```sh
-docker run -it --rm -v $(pwd):/wd -p 80:8888 -e JUPYTER_TOKEN=Jupyt3r -e GRANT_SUDO=yes iankoulski/do-jupyterlab
+docker run -it --rm -v $(pwd):/wd -p 8888:8888 -e JUPYTER_TOKEN=Jupyt3r -e GRANT_SUDO=yes iankoulski/do-jupyterlab
 ```
 
 To run JupyterLab on Kubernetes using the pre-built container image, please use the following command:
